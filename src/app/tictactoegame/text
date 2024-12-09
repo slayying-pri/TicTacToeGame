@@ -1,0 +1,36 @@
+<h1 class="heading">TIC TAC TOE!!</h1>
+
+<div class="playerpanel">
+    <div class="player">
+        <input type="text" [(ngModel)]="playerAName" class="player-input" [readOnly]="!isEditingA"/>
+        <button class="edit-button">{{isEditingA?'save':'edit'}}</button>
+    </div>
+    <div class="player">
+        <input type="text" [(ngModel)]="playerBName" class="player-input" [readOnly]="!isEditingB"/>
+        <button class="edit-button">{{isEditingB?'save':'edit'}}</button>
+    </div>
+</div>
+
+<div class="game">
+    <div class="d-flex flex-column">
+    <div class="d-flex">
+        <span class="square">1</span>
+        <span class="square">2</span>
+        <span class="square">3</span>
+    </div>
+    <div class="d-flex">
+        <span class="square">4</span>
+        <span class="square">5</span>
+        <span class="square">6</span>
+    </div>
+    <div class="d-flex">
+        <span class="square">7</span>
+        <span class="square">8</span>
+        <span class="square">9</span>
+    </div>
+    </div>
+</div>
+
+<div class="movesorder">
+    <input class="movetext" type="text" readonly placeholder="moves"/>
+</div>
